@@ -2,6 +2,16 @@
   font-family: neu;
   src: url("NeueHaasDisplayMediu.ttf") format("truetype");
 }
+@font-face {
+  font-family: neu;
+  font-weight: 100;
+  src: url("NeueHaasDisplayLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: neu;
+  font-weight: 200;
+  src: url("NeueHaasDisplayRoman.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -174,7 +184,9 @@ nav {
 #page2 {
   min-height: 100vh;
   width: 100%;
-  padding: 8vw 0; 
+  padding: 8vw 0;
+  background-color: #efeae3;
+  position: relative;
 }
 
 .con {
@@ -205,10 +217,76 @@ nav {
 }
 
 @keyframes move {
-    from {
-        transform: translatex(0);
-    }
-    to{
-        transform: translatex(-100%);
-    }
+  from {
+    transform: translatex(0);
+  }
+  to {
+    transform: translatex(-100%);
+  }
+}
+
+#page2-bottom {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4vw 6vw;
+  margin: 2vw;
+  gap: 10vw;
+  position: relative;
+  z-index: 9;
+}
+
+#page2-bottom h1 {
+  font-size: 4.2vw;
+  width: 65%;
+  line-height: 4vw;
+  font-weight: 700;
+}
+
+#bottom-pt2 {
+  width: 20%;
+}
+
+#bottom-pt2 img {
+  width: 110%;
+  border-radius: 15px;
+  margin-top: 20vw;
+}
+
+#bottom-pt2 p {
+  font-weight: 200;
+  margin-top: 2vw;
+  font-size: 1vw;
+}
+
+#page2 #jolly {
+  height: 32vw;
+  width: 32vw;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #ff3107, #ff671b);
+  top: 58%;
+  left: 25%;
+  position: absolute;
+  filter: blur(20px);
+  animation-name: jolly;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes jolly {
+  from {
+    transform: translate(10%, -10%) skew(0);
+  }
+  to {
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
 }
