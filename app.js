@@ -4,3 +4,8 @@ const scroll = new LocomotiveScroll({
 });
 
 console.log(typeof LocomotiveScroll);
+
+
+var a = document.querySelector(".elem1")
+var abc =  a.getAttribute("data-image")
+console.log(abc);

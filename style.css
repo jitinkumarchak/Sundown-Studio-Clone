@@ -286,7 +286,52 @@ nav {
 }
 
 #page3 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #efeae3;
+  padding: 4vw 0;
+}
+
+#page3 h4 {
+  padding: 2vw 2vw;
+  font-weight: 100;
+  display: inline-block;
+}
+#gola2 {
+  height: 1vw;
+  width: 1vw;
+  border-radius: 50%;
+  background-color: #fa3f0a;
+  display: inline-block;
+}
+
+#elem {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  border-bottom: 1px solid rgb(66, 64, 64);
+  overflow: hidden;
+}
+
+#elem h2 {
+  font-size: 3vw;
+  position: relative;
+  z-index: 9;
+}
+
+#elem .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all ease 0.4s;
+}
+
+#elem:hover .overlay {
+  top: 0;
 }
